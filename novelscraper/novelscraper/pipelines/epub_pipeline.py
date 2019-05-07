@@ -1,0 +1,63 @@
+# -*- coding: utf-8 -*-
+
+# Define your item pipelines here
+#
+# Don't forget to add your pipeline to the ITEM_PIPELINES setting
+# See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+
+import os.path
+
+from ebooklib import epub
+
+
+class EpubPipeline():
+
+    def __init__(self):
+        # create book
+        self.book = epub.EpubBook()
+
+
+    def process_item(self, item, spider):
+        """Write the chapter to the Epub, which was created from the constructor"""
+
+        # add linebreak to the lines and join them to a string
+        list_of_lines = item['chapter_content']
+        list_of_lines = map(lambda x: '<p>' + x + '</p>', list_of_lines)
+        chapter_content = ''.join(list_of_lines)
+
+        # prepare stuff for chapter
+        title = item['chapter_title']
+        f_name = title.lower().strip()
+
+        # create chapter
+        chapter = epub.EpubHtml(title=title, file_name=f_name, lang='en')
+        title_html = '<h1>' + title + '</h1>'
+        chapter.set_content(title + chapter_content)
+
+        # add chapter to book
+        self.book.add_item(chapter)
+        self.book.spine.append(chapter)
+        self.book.toc.append(chapter)
+        return item
+
+
+    def close_spider(self, spider):
+        # set metadata
+        self.book.set_identifier(spider.book_name)
+        self.book.set_title(spider.book_name)
+        self.book.set_language('en')
+        try:
+            self.book.add_author(spider.author)
+        except AttributeError:
+            self.book.add_author("Unknown")
+
+        self.book.spine.append('nav')
+
+        # add navigation elements
+        self.book.add_item(epub.EpubNcx())
+        self.book.add_item(epub.EpubNav())
+
+        # create ebook
+        path = spider.book_name.strip() + '.epub'
+        path = os.path.join('Output', 'Epub', path)
+        epub.write_epub(path, self.book)

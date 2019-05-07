@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# Define your item pipelines here
-#
-# Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-
 import os.path
 
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import cm
 from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak, Spacer
+
+# Define your item pipelines here
+#
+# Don't forget to add your pipeline to the ITEM_PIPELINES setting
+# See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+from data.file_types import FileTypes
 
 
 class PDFPipeline(object):
@@ -29,6 +30,10 @@ class PDFPipeline(object):
 
     def process_item(self, item, spider):
         """Write the chapter to the story, which was created in the constructor"""
+
+        # if the file type is not doxc skip this pipeline
+        if spider.file_type != FileTypes.PDF:
+            return item
 
         # print chapter title
         self.story.append(Paragraph(item['chapter_title'], self.heading_style))
@@ -51,6 +56,6 @@ class PDFPipeline(object):
         # create empty pdf doc
         path = spider.book_name.strip() + '.pdf'
         path = os.path.join('Output', 'Pdf', path)
-        self.doc = SimpleDocTemplate(path)
+        doc = SimpleDocTemplate(path)
         # wirte story to pdf
-        self.doc.build(self.story)
+        doc.build(self.story)

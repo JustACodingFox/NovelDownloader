@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
+import os.path
+
 # Define your item pipelines here
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+from data.file_types import FileTypes
 
-import os.path
 
 class TxtPipeline():
 
@@ -16,6 +18,10 @@ class TxtPipeline():
 
     def process_item(self, item, spider):
         """Append the chapter to a list, which was created in the constructor"""
+
+        # if the file type is not doxc skip this pipeline
+        if spider.file_type != FileTypes.TXT:
+            return item
 
         # add linebreak to the lines and join them to a string
         list_of_lines = item['chapter_content']

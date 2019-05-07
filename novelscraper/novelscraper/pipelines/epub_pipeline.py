@@ -9,6 +9,8 @@ import os.path
 
 from ebooklib import epub
 
+from data.file_types import FileTypes
+
 
 class EpubPipeline():
 
@@ -19,6 +21,10 @@ class EpubPipeline():
 
     def process_item(self, item, spider):
         """Write the chapter to the Epub, which was created from the constructor"""
+
+        # if the file type is not doxc skip this pipeline
+        if spider.file_type != FileTypes.EPUB:
+            return item
 
         # add linebreak to the lines and join them to a string
         list_of_lines = item['chapter_content']

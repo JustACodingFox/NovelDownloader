@@ -9,6 +9,8 @@ import os.path
 
 from docx import Document
 
+from data.file_types import FileTypes
+
 
 class DocxPipeline():
 
@@ -18,6 +20,10 @@ class DocxPipeline():
 
     def process_item(self, item, spider):
         """Write the chapter to the a Document, which was created from the constructor"""
+
+        # if the file type is not doxc skip this pipeline
+        if spider.file_type != FileTypes.DOXC:
+            return item
 
         # add linebreak to the lines and join them to a string
         list_of_lines = item['chapter_content']

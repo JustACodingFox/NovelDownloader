@@ -64,9 +64,12 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'novelscraper.pipelines.NovelscraperPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'novelscraper.pipelines.docx_pipeline.DocxPipeline': 100,
+    'novelscraper.pipelines.pdf_pipeline.PDFPipeline': 200,
+    'novelscraper.pipelines.epub_pipeline.EpubPipeline': 300,
+    'novelscraper.pipelines.txt_pipeline.TxtPipeline': 400
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

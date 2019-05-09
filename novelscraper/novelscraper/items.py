@@ -12,7 +12,3 @@ class BookItem(scrapy.Item):
     # define the fields for your item here like:
     chapter_title = scrapy.Field()
     chapter_content = scrapy.Field()
-
-    def __repr__(self):
-        """only print out attr1 after exiting the Pipeline"""
-        return repr({"chapter_title": self['chapter_title']})

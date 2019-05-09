@@ -6,17 +6,22 @@ from ..items import BookItem
 class SpiderWuxiaWorld(scrapy.Spider):
     name = 'wuxia'
 
-    def __init__(self, category=None, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         super(SpiderWuxiaWorld, self).__init__(*args, **kwargs)
+
         # set url
         self.start_urls = [kwargs.get('link')]
+
         # set name
         if kwargs.get('name'):
             self.book_name = kwargs.get('name')
         else:
             self.book_name = 'unknown'
+
         # set file type attribute
         self.file_type = kwargs.get('file_type')
+
+        print("Spider created")
 
     def parse(self, response):
         # get title of the chapter

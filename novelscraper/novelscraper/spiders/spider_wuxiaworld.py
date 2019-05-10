@@ -21,8 +21,6 @@ class SpiderWuxiaWorld(scrapy.Spider):
         # set file type attribute
         self.file_type = kwargs.get('file_type')
 
-        print("Spider created")
-
     def parse(self, response):
         # get title of the chapter
         chapter_title = response.xpath('//div[@class="caption clearfix"]').css('h4::text').get()

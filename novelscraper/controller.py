@@ -26,8 +26,9 @@ class CustomDialog(QDialog):
         self.host_selector = QComboBox()
         self.file_selector = QComboBox()
         self.fill_selectors()
-        download_button = QPushButton('Download Novel')
-        download_button.clicked.connect(lambda: self.download(name_edit.text(), author_edit.text(), link_edit.text(),
+        self.download_button = QPushButton('Download Novel')
+        self.download_button.clicked.connect(
+            lambda: self.download(name_edit.text(), author_edit.text(), link_edit.text(),
                                                               self.host_selector.currentText(),
                                                               self.file_selector.currentText()))
 
@@ -38,7 +39,7 @@ class CustomDialog(QDialog):
         form_layout.addRow(self.tr('&Link(First Chapter)'), link_edit)
         form_layout.addRow(self.tr('&Host'), self.host_selector)
         form_layout.addRow(self.tr('&Output File'), self.file_selector)
-        form_layout.addRow(download_button)
+        form_layout.addRow(self.download_button)
         form_layout.setVerticalSpacing(20)
         self.setLayout(form_layout)
 
@@ -49,10 +50,19 @@ class CustomDialog(QDialog):
             self.host_selector.addItem(host.value)
 
     def download(self, name, author, link, host, file):
+        # block the button
+        self.download_button.setText('Downloading')
+        self.download_button.setCheckable(False)
+
         process = CrawlerProcess(get_project_settings())
-        if host == Hosts.WUXIAWORLD:
+        if host == Hosts.WUXIAWORLD.value:
             process.crawl('wuxia', name=name, author=author, link=link, file_type=file)
+
         process.start()
+
+        # unblock button
+        self.download_button.setText('Download Novel')
+        self.download_button.setCheckable(True)
 
 
 if __name__ == '__main__':

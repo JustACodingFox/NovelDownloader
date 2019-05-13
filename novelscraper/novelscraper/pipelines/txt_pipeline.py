@@ -20,7 +20,7 @@ class TxtPipeline():
         """Append the chapter to a list, which was created in the constructor"""
 
         # if the file type is not doxc skip this pipeline
-        if spider.file_type != FileTypes.TXT:
+        if spider.file_type != FileTypes.TXT.value:
             return item
 
         # add linebreak to the lines and join them to a string

@@ -26,7 +26,7 @@ class EpubPipeline():
         """Write the chapter to the Epub, which was created from the constructor"""
 
         # if the file type is not doxc skip this pipeline
-        if spider.file_type != FileTypes.EPUB:
+        if spider.file_type != FileTypes.EPUB.value:
             return item
 
         # add linebreak to the lines and join them to a string

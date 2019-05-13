@@ -34,7 +34,7 @@ class PDFPipeline(object):
         """Write the chapter to the story, which was created in the constructor"""
 
         # if the file type is not doxc skip this pipeline
-        if spider.file_type != FileTypes.PDF:
+        if spider.file_type != FileTypes.PDF.value:
             return item
 
         # print chapter title

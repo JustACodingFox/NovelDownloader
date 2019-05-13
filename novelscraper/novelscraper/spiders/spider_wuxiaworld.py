@@ -7,6 +7,7 @@ class SpiderWuxiaWorld(scrapy.Spider):
     name = 'wuxia'
 
     def __init__(self, *args, **kwargs):
+        print('created spider')
         super(SpiderWuxiaWorld, self).__init__(*args, **kwargs)
 
         # set url

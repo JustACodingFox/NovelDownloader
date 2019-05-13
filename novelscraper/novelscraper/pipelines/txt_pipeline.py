@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-
-import os.path
-
 # Define your item pipelines here
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-from data.file_types import FileTypes
+import os.path
+import sys
 
+sys.path.append('..')
+from data.file_types import FileTypes
 
 class TxtPipeline():
 

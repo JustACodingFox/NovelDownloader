@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/txt_pipeline.py" line="1" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7ff0db04-d398-40c9-b273-e889631407db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelscraper/novelscraper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelscraper/novelscraper/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelscraper/novelscraper/spiders/spider_wuxiaworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelscraper/novelscraper/spiders/spider_wuxiaworld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/docx_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/docx_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/epub_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/epub_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/pdf_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/pdf_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/txt_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/txt_pipeline.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,23 +20,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/novelscraper/controller.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+            <state relative-caret-position="271">
+              <caret line="66" column="18" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/txt_pipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#192#206#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/items.py">
+        <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/pdf_pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="60">
+              <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+              <folding>
+                <element signature="e#25#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/epub_pipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#194#208#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/docx_pipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#194#208#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,27 +82,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/docx_pipeline.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
-                <element signature="e#194#208#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="71" column="3" lean-forward="true" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -84,24 +108,25 @@
         <option value="$PROJECT_DIR$/novelscraper/novelscraper/data/test.py" />
         <option value="$PROJECT_DIR$/novelscraper/novelscraper/data/file_types.py" />
         <option value="$PROJECT_DIR$/novelscraper/novelscraper/scrapy_controller.py" />
-        <option value="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/pdf_pipeline.py" />
-        <option value="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/txt_pipeline.py" />
-        <option value="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/epub_pipeline.py" />
         <option value="$PROJECT_DIR$/data/file_types.py" />
         <option value="$PROJECT_DIR$/data/hosts.py" />
         <option value="$PROJECT_DIR$/novelscraper/controller.py" />
         <option value="$PROJECT_DIR$/novelscraper/novelscraper/items.py" />
         <option value="$PROJECT_DIR$/novelscraper/novelscraper/spiders/spider_wuxiaworld.py" />
-        <option value="$PROJECT_DIR$/novelscraper/novelscraper/settings.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/txt_pipeline.py" />
+        <option value="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/pdf_pipeline.py" />
+        <option value="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/epub_pipeline.py" />
         <option value="$PROJECT_DIR$/novelscraper/novelscraper/pipelines/docx_pipeline.py" />
+        <option value="$PROJECT_DIR$/novelscraper/novelscraper/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="70" />
-    <option name="y" value="27" />
-    <option name="width" value="925" />
-    <option name="height" value="957" />
+    <option name="x" value="519" />
+    <option name="y" value="244" />
+    <option name="width" value="915" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -109,6 +134,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,39 +160,27 @@
               <item name="novelscraper" type="462c0819:PsiDirectoryNode" />
               <item name="pipelines" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NovelDownloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NovelDownloader" type="462c0819:PsiDirectoryNode" />
-              <item name="novelscraper" type="462c0819:PsiDirectoryNode" />
-              <item name="novelscraper" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NovelDownloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NovelDownloader" type="462c0819:PsiDirectoryNode" />
-              <item name="novelscraper" type="462c0819:PsiDirectoryNode" />
-              <item name="Output" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/novelscraper/novelscraper/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/novelscraper/novelscraper/pipelines" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/novelscraper" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/novelscraper/novelscraper" />
+      <recent name="$PROJECT_DIR$/novelscraper" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/novelscraper/novelscraper/pipelines" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/novelscraper/novelscraper/pipelines" />
       <recent name="$PROJECT_DIR$/novelscraper/novelscraper/data" />
       <recent name="$PROJECT_DIR$/novelscraper/novelscraper" />
     </key>
@@ -294,19 +308,26 @@
       <option name="project" value="LOCAL" />
       <updated>1557429585902</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="started debugging the pipelines and spider">
+      <created>1557503075462</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557503075462</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="957" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12643678" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12643678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32886723" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32886723" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -319,13 +340,33 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12643678" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32886723" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="made the pipelines selectable" />
     <MESSAGE value="added gui but scrapy is not working" />
     <MESSAGE value="remove repr method of book item" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove repr method of book item" />
+    <MESSAGE value="started debugging the pipelines and spider" />
+    <option name="LAST_COMMIT_MESSAGE" value="started debugging the pipelines and spider" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -339,36 +380,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/data/test.py" />
     <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/scrapy_controller.py" />
-    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/pdf_pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-          <folding>
-            <element signature="e#193#230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/epub_pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-          <folding>
-            <element signature="e#194#231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/txt_pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="e#193#230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/file_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -383,6 +394,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/file_types.py" />
     <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -392,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/novelscraper/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -404,23 +416,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/settings.py">
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/pdf_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="71" column="3" lean-forward="true" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
+        <state relative-caret-position="60">
+          <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/txt_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#192#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/epub_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#194#208#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/pipelines/docx_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="146">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#194#208#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelscraper/novelscraper/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="66" column="18" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
         </state>
       </provider>
     </entry>

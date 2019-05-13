@@ -14,13 +14,18 @@ class TxtPipeline():
     def __init__(self):
         # make the book title an argument
         self.chapter_list = []
+        self.create_book = True
 
 
     def process_item(self, item, spider):
         """Append the chapter to a list, which was created in the constructor"""
 
+        if not self.create_book:
+            return item
+
         # if the file type is not doxc skip this pipeline
         if spider.file_type != FileTypes.TXT.value:
+            self.create_book = False
             return item
 
         # add linebreak to the lines and join them to a string
@@ -34,6 +39,10 @@ class TxtPipeline():
         return item
 
     def close_spider(self, spider):
+        # do not create the book if it should not be created
+        if not self.create_book:
+            return
+
         # open txt file
         path = spider.book_name.strip() + '.txt'
         path = os.path.join('Output', 'Txt', path)

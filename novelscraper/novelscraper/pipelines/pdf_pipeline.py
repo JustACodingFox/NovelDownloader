@@ -29,12 +29,17 @@ class PDFPipeline(object):
             fontName='Helvetica-Bold',
             fontSize=16,
         )
+        self.create_book = True
 
     def process_item(self, item, spider):
         """Write the chapter to the story, which was created in the constructor"""
 
+        if not self.create_book:
+            return item
+
         # if the file type is not doxc skip this pipeline
         if spider.file_type != FileTypes.PDF.value:
+            self.create_book = False
             return item
 
         # print chapter title
@@ -55,6 +60,10 @@ class PDFPipeline(object):
         return item
 
     def close_spider(self, spider):
+        # do not create the book if it should not be created
+        if not self.create_book:
+            return
+
         # create empty pdf doc
         path = spider.book_name.strip() + '.pdf'
         path = os.path.join('Output', 'Pdf', path)

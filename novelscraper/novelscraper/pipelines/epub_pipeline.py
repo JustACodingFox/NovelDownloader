@@ -20,13 +20,18 @@ class EpubPipeline():
     def __init__(self):
         # create book
         self.book = epub.EpubBook()
+        self.create_book = True
 
 
     def process_item(self, item, spider):
         """Write the chapter to the Epub, which was created from the constructor"""
 
+        if not self.create_book:
+            return item
+
         # if the file type is not doxc skip this pipeline
         if spider.file_type != FileTypes.EPUB.value:
+            self.create_book = False
             return item
 
         # add linebreak to the lines and join them to a string
@@ -51,6 +56,10 @@ class EpubPipeline():
 
 
     def close_spider(self, spider):
+        # do not create the book if it should not be created
+        if not self.create_book:
+            return
+
         # set metadata
         self.book.set_identifier(spider.book_name)
         self.book.set_title(spider.book_name)

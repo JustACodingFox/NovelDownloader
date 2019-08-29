@@ -5,9 +5,11 @@ from data.hosts import Hosts
 
 process = CrawlerProcess(get_project_settings())
 
-process.crawl(Hosts.WEBNOVEL.value, link='https://www.webnovel.com/book/7176992105000305/19453999690351712',
-              name="The King`s Avatar")
-# process.crawl(Hosts.WUXIAWORLD.value, link='https://www.wuxiaworld.com/novel/battle-through-the-heavens/btth-chapter-1', name="Battle Through the Heavens")
+process.crawl(Hosts.VOLARENOVELS.value,
+              link='https://www.volarenovels.com/novel/transmigrator-meets-reincarnator/tmr-chapter-1',
+              name="Transmigrator Meets Reincarnator")
+process.crawl(Hosts.VOLARENOVELS.value, link='https://www.volarenovels.com/novel/great-demon-king/gdk-chapter-0',
+              name="Great Demon King")
 # process.crawl(Hosts.WUXIAWORLD.value, link='https://www.wuxiaworld.com/novel/desolate-era/de-book-1-chapter-1', name="Desolate Era")
 # process.crawl(Hosts.WUXIAWORLD.value, link='https://www.wuxiaworld.com/novel/heavenly-jewel-change/hjc-book-1-chapter-1-01', name="Heavenly Jewel Change")
 # process.crawl(Hosts.WUXIAWORLD.value, link='https://www.wuxiaworld.com/novel/i-shall-seal-the-heavens/issth-book-1-chapter-1', name="I Shall Seal the Heavens")

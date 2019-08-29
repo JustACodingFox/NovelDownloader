@@ -1,2 +1,4 @@
 
 *.epub
+Output/
+.scrapy/
